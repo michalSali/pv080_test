@@ -63,6 +63,7 @@ jobs:
       name: Build cpp
       run: |
        g++ ./buggycode/fail.cpp
+       g++ ./buggycode/BufferOverflow.cpp
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
