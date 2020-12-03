@@ -61,7 +61,7 @@ jobs:
     
     - if: matrix.language == 'cpp'
       name: Build cpp
-    - run: |
+      run: |
        g++ ./fail.cpp
 
     - name: Perform CodeQL Analysis
